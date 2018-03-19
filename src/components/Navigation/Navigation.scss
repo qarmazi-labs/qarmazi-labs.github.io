@@ -1,0 +1,41 @@
+@import '~react-md/src/scss/react-md';
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+  .main-container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    flex: 1;
+
+    .main-content {
+      flex: 1;
+    }
+  }
+}
+
+header.md-toolbar {
+  .md-icon, .md-title, * {
+    color: $md-red-900;
+  }
+}
+
+.md-toolbar {
+  background-color: rgb(0, 0, 0);
+  .md-title {
+    color: $md-red-900;
+  }
+  &~ .md-list--drawer {
+    background-color: rgb(0, 0, 0);
+    .md-icon {
+      color: $md-red-900;
+    }
+    .md-tile-content {
+      .md-text {
+        color: $md-red-900;
+      }
+    }
+  }
+}
