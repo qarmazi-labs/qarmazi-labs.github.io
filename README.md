@@ -1,1 +1,0 @@
-# Qarmazi Labs' Site
